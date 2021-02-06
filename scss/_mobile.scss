@@ -1,0 +1,390 @@
+// Widescreens
+@include mediaXl {
+  #home {
+    .home-inner {
+      .banner-text {
+        margin-top: 180px;
+
+        h1 {
+          span {
+            &.m-left {
+              margin-left: -14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Desktops & Laptops
+@include mediaLg {
+  #home {
+    .home-inner {
+      .banner-text {
+        margin-top: 140px;
+
+        .real-name {
+          font-size: 4.5rem;
+
+          span {
+            &.m-left {
+              margin-left: -6px;
+            }
+          }
+        }
+
+        h1 {
+          font-size: 3.5rem;
+
+          span {
+            &.m-left {
+              margin-left: -13px;
+            }
+          }
+        }
+      }
+
+      .scroll-to-next {
+        margin-top: 95px;
+      }
+    }
+  }
+
+  #about {
+    .about-inner {
+      .my-img {
+        width: 90%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .about-text {
+        font-size: 18px;
+        padding: 1rem 0;
+        line-height: 28px;
+      }
+    }
+  }
+}
+
+// Tablets and Small Laptops
+@include mediaMd {
+  .header {
+    .header-inner {
+      .navbar {
+        // background-color: #143247;
+        background: rgba(0, 0, 0, 0.8);
+
+        .navbar-toggler {
+
+          &:hover,
+          &:active {
+            background: none;
+          }
+        }
+
+        .menu-icon {
+          height: 30px;
+          width: 30px;
+          position: fixed;
+          z-index: 2;
+          top: 15px;
+          right: 50px;
+          cursor: pointer;
+        }
+
+        .menu-icon__line {
+          height: 2px;
+          width: 30px;
+          display: block;
+          background-color: #ffffff;
+          margin-bottom: 4px;
+          -webkit-transition: background-color 0.5s ease, -webkit-transform 0.2s ease;
+          transition: background-color 0.5s ease, -webkit-transform 0.2s ease;
+          transition: transform 0.2s ease, background-color 0.5s ease;
+          transition: transform 0.2s ease, background-color 0.5s ease,
+            -webkit-transform 0.2s ease;
+        }
+
+        .menu-icon__line-left {
+          width: 15px;
+        }
+
+        .menu-icon__line-right {
+          width: 15px;
+          float: left;
+          margin-left: 15px;
+        }
+
+        .menu-icon[aria-expanded="true"] .menu-icon__line {
+          background-color: #fff;
+          -webkit-transform: translateX(0px) rotate(-45deg);
+          transform: translateX(0px) rotate(-45deg);
+        }
+
+        .menu-icon[aria-expanded="true"] .menu-icon__line-left {
+          -webkit-transform: translateX(1px) rotate(45deg);
+          transform: translateX(1px) rotate(45deg);
+        }
+
+        .menu-icon[aria-expanded="true"] .menu-icon__line-right {
+          -webkit-transform: translateX(-2px) rotate(45deg);
+          transform: translateX(-2px) rotate(45deg);
+        }
+
+
+        .navbar-collapse {
+
+          .navbar-nav {
+            // height: 100vh;
+            // padding-top: 6rem;
+            // text-align: center;
+
+            .nav-item .nav-link {
+              // font-size: 2.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #home {
+    .home-inner {
+      .banner-text {
+        margin-top: 150px;
+
+        .real-name {
+          font-size: 4rem;
+
+          span {
+            &.m-left {
+              margin-left: -6px;
+            }
+          }
+        }
+
+        h1 {
+          font-size: 3rem;
+
+          span {
+
+            &.m-left {
+              margin-left: -10px;
+            }
+          }
+        }
+      }
+
+      .scroll-to-next {
+        margin-top: 110px;
+      }
+    }
+  }
+
+  #about {
+    .heading {
+      padding: 0;
+    }
+
+    .about-inner {
+      .my-img {
+        display: block;
+        margin: 0 auto;
+      }
+
+      .about-text {
+        font-size: 18px;
+        padding: 1rem 0;
+        line-height: 28px;
+      }
+    }
+  }
+}
+
+// Smartphones
+@include mediaSm {
+  #home {
+    .home-inner {
+      .banner-text {
+
+        .real-name {
+          font-size: 3rem;
+
+          span {
+            &.m-left {
+              margin-left: -4px;
+            }
+          }
+        }
+
+        h1 {
+          font-size: 2.5rem;
+
+          span {
+            &.m-left {
+              margin-left: -6px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #about {
+    .heading {
+      padding: 0;
+
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+
+    .about-inner {
+
+      .my-img {
+        width: 80%;
+      }
+
+      .about-text {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+
+  #work {
+    padding: 1.5rem 0;
+
+    .heading {
+      padding: 0;
+
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+
+    .work-inner {
+
+      .projects-item {
+        border-radius: 7px;
+
+        &__title {
+          font-size: 1.5rem;
+          padding: 10px 10px 0;
+        }
+
+        .projects-img {
+          padding: 5px 15px;
+
+          &__inside {
+            width: 100%;
+            border-radius: 10px;
+
+            img {
+              width: 100%;
+              height: 50vw;
+              border-radius: 7px;
+            }
+          }
+        }
+
+        &__body {
+          padding: 15px;
+
+          .made-with {
+
+            &__img {
+              margin: 0 5px;
+              height: 30px;
+              width: 30px;
+            }
+
+            .bootstrap {
+              border-radius: 70%;
+            }
+          }
+        }
+      }
+    }
+
+    .all-projects {
+      margin-bottom: 20px;
+
+      a {
+        border-radius: 10px;
+        font-size: 14px;
+        padding: 10px 18px;
+      }
+    }
+  }
+
+  #contact {
+    padding: 1.5rem 0 2rem;
+
+    .contact-inner {
+
+      .social-icons {
+
+        .social-link {
+          margin: 5px;
+
+          img {
+            width: 10%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include mediaSmX {
+  #home {
+    .home-inner {
+      .banner-text {
+        margin-top: 185px;
+
+        .real-name {
+          font-size: 2.5rem;
+
+          span {
+            &.m-left {
+              margin-left: -4px;
+            }
+          }
+        }
+
+        h1 {
+          font-size: 2rem;
+
+          span {
+            &.m-left {
+              margin-left: -7px;
+            }
+          }
+        }
+      }
+
+      .scroll-to-next {
+        margin-top: 170px;
+      }
+    }
+  }
+
+  #work {
+    .heading {
+      padding: 0;
+    }
+
+    .all-projects {
+      margin-bottom: 0;
+    }
+  }
+
+  #contact {
+    padding: 1rem 0 1rem;
+  }
+}

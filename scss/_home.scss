@@ -1,0 +1,72 @@
+#home {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+
+  .home-inner {
+    @extend .inner;
+
+    .banner-text {
+      margin-top: 150px;
+
+      .intro-name {
+        font-family: reem_kufi;
+      }
+
+      .frontend {
+        font-family: reem_kufi;
+      }
+
+      .real-name {
+        font-size: 5rem;
+
+        span {
+          &.m-left {
+            margin-left: -6px;
+          }
+        }
+      }
+
+      h1 {
+        color: #fff;
+        font-family: "edwardian_regular", sans-serif;
+        font-size: 4rem;
+        text-align: center;
+        padding-bottom: 1rem;
+        text-shadow: 4px 4px 4px #00aeff;
+        cursor: context-menu;
+
+        span {
+          display: inline-block;
+
+          &:hover {
+            // color: #48cfad;
+            transition: all 0.5s;
+            animation: rubberBand 1s;
+          }
+
+          &.m-left {
+            margin-left: -18px;
+          }
+        }
+      }
+    }
+
+    .scroll-to-next {
+      text-align: center;
+      margin-top: 110px;
+
+      .mouse-wheel {
+        margin: 2px auto 0;
+        -webkit-animation: 2s ease-in infinite bounce;
+        -moz-animation: 2s ease-in infinite bounce;
+        animation: 2s ease-in infinite bounce;
+
+        a {
+          padding: 1rem;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

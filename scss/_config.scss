@@ -1,0 +1,116 @@
+$main-color: #00aeff;
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #F5F5F5;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background-color: #555;
+}
+
+.heading {
+  color: #fff;
+  margin: 3rem 0;
+  padding-left: 1rem;
+  text-align: center;
+  font-size: 3rem;
+  text-shadow: 3px 3px 3px #00aeff;
+  background-color: #000;
+  font-weight: 900;
+}
+
+.inner {
+  position: relative;
+  z-index: 888;
+}
+
+.fixed_position {
+  position: fixed;
+}
+
+.navbar_fixed {
+  position: fixed;
+  width: 100%;
+  top: -70px;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: rgb(255, 255, 255);
+  transform: translateY(70px);
+}
+
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 -10px #00aeff;
+  }
+
+  40% {
+    box-shadow: 0 0 20px #00aeff;
+  }
+
+  60% {
+    box-shadow: 0 0 20px #00aeff;
+  }
+
+  100% {
+    box-shadow: 0 0 -10px #00aeff;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+
+// Media Query Mixins
+@mixin mediaSmX {
+  @media screen and (max-width: 382px) {
+    @content;
+  }
+}
+
+@mixin mediaSm {
+  @media screen and (max-width: 576px) {
+    @content;
+  }
+}
+
+@mixin mediaMd {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mediaLg {
+  @media screen and (min-width: 769px) and (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin mediaXl {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}

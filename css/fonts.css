@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'reem_kufi';
+  font-weight: 400;
+  src: url('../fonts/reem-kufi/reem-kufi-v9-latin-regular.eot'),
+    /* IE9 Compat Modes */
+    url('../fonts/reem-kufi/reem-kufi-v9-latin-regular.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('../fonts/reem-kufi/reem-kufi-v9-latin-regular.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('../fonts/reem-kufi/reem-kufi-v9-latin-regular.woff') format('woff'),
+    /* Modern Browsers */
+    url('../fonts/reem-kufi/reem-kufi-v9-latin-regular.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('../fonts/reem-kufi/reem-kufi-v9-latin-regular.svg#ReemKufi') format('svg');
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'potra';
+  src: url('../fonts/Potra/Potra.woff2') format('woff2'),
+    url('../fonts/Potra/Potra.woff') format('woff'),
+    url('../fonts/Potra/Potra.otf') format('oft'),
+    url('../fonts/Potra/Potra.svg') format('svg'),
+    url('../fonts/Potra/Potra.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'edwardian_regular';
+  src: url('../fonts/edwardian/EdwardianRegular.woff2') format('woff2'),
+    url('../fonts/edwardian/EdwardianRegular.woff') format('woff'),
+    url('../fonts/edwardian/EdwardianRegular.svg') format('svg'),
+    url('../fonts/edwardian/EdwardianRegular.ttf') format('ttf'),
+    url('../fonts/edwardian/EdwardianRegular.otf') format('otf');
+}

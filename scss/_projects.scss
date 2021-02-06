@@ -1,0 +1,92 @@
+// Work/Projects
+#work {
+  padding: 2rem 0;
+
+  .heading {
+    h1 {
+      @extend .heading;
+    }
+  }
+
+  .work-inner {
+    @extend .inner;
+    padding: 0 0 1rem 0;
+
+    .projects-item {
+      background-color: hsla(0, 0%, 100%, .81);
+      border-radius: 7px;
+
+      &__title {
+        font-size: 2rem;
+        font-weight: 700;
+        padding: 15px 20px 0;
+        color: #000;
+        text-align: center;
+      }
+
+      .projects-img {
+        padding: 15px;
+
+        &__inside {
+          width: 100%;
+          overflow: hidden;
+          border-radius: 10px;
+
+          img {
+            width: 100%;
+            transition: all .3s ease-in-out;
+            height: 20vw;
+            object-fit: cover;
+            border-radius: 7px;
+
+            &:hover {
+              animation: fadeInUp 1s linear infinite;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+
+      &__body {
+        padding: 15px;
+
+        .made-with {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          &__img {
+            margin: 0 5px;
+            height: 30px;
+            width: 30px;
+          }
+
+          .bootstrap {
+            border-radius: 70%;
+          }
+        }
+      }
+    }
+  }
+
+  .all-projects {
+    text-align: center;
+    margin-bottom: 20px;
+
+    a {
+      background: #28a745;
+      border-radius: 10px;
+      color: #fff;
+      font-size: 16px;
+      text-decoration: none;
+      font-family: M_medium, Arial, Helvetica, sans-serif;
+      font-weight: 400;
+      cursor: pointer;
+      padding: 12px 22px;
+
+      &:hover {
+        opacity: .7;
+      }
+    }
+  }
+}

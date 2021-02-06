@@ -124,13 +124,15 @@
       -webkit-transition: 0.3s ease;
       -o-transition: 0.3s ease;
       transition: 0.3s ease; }
-      .header .header-inner .navbar .navbar-collapse .navbar-nav .nav-item .nav-link .active {
-        font-size: 25px;
-        font-weight: 600;
-        color: #00aeff !important; }
       .header .header-inner .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
         font-size: 25px;
         text-shadow: 5px 5px 5px #00aeff; }
+    .header .header-inner .navbar .navbar-collapse .navbar-nav .nav-item .active {
+      font-size: 25px;
+      font-weight: 600;
+      color: #00aeff; }
+      .header .header-inner .navbar .navbar-collapse .navbar-nav .nav-item .active:hover {
+        text-shadow: none; }
     .header .header-inner .navbar button:focus {
       outline: none;
       background-color: rgba(255, 255, 255, 0.1); }

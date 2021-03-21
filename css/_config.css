@@ -1,0 +1,95 @@
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5; }
+
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #F5F5F5; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #555; }
+
+.heading {
+  color: #fff;
+  margin: 3rem 0;
+  padding-left: 1rem;
+  text-align: center;
+  font-size: 3rem;
+  text-shadow: 3px 3px 3px #00aeff;
+  background-color: #000;
+  font-weight: 900; }
+
+.inner {
+  position: relative;
+  z-index: 888; }
+
+.fixed_position {
+  position: fixed; }
+
+.navbar_fixed {
+  position: fixed;
+  width: 100%;
+  top: -70px;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  -webkit-transform: translateY(70px);
+  -ms-transform: translateY(70px);
+  transform: translateY(70px); }
+
+@-webkit-keyframes glowing {
+  0% {
+    -webkit-box-shadow: 0 0 -10px #00aeff;
+    box-shadow: 0 0 -10px #00aeff; }
+  40% {
+    -webkit-box-shadow: 0 0 20px #00aeff;
+    box-shadow: 0 0 20px #00aeff; }
+  60% {
+    -webkit-box-shadow: 0 0 20px #00aeff;
+    box-shadow: 0 0 20px #00aeff; }
+  100% {
+    -webkit-box-shadow: 0 0 -10px #00aeff;
+    box-shadow: 0 0 -10px #00aeff; } }
+
+@keyframes glowing {
+  0% {
+    -webkit-box-shadow: 0 0 -10px #00aeff;
+    box-shadow: 0 0 -10px #00aeff; }
+  40% {
+    -webkit-box-shadow: 0 0 20px #00aeff;
+    box-shadow: 0 0 20px #00aeff; }
+  60% {
+    -webkit-box-shadow: 0 0 20px #00aeff;
+    box-shadow: 0 0 20px #00aeff; }
+  100% {
+    -webkit-box-shadow: 0 0 -10px #00aeff;
+    box-shadow: 0 0 -10px #00aeff; } }
+
+@-webkit-keyframes fadeInUp {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+  to {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes fadeInUp {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+  to {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }

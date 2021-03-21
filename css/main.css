@@ -222,8 +222,6 @@
             -o-transition: all .3s ease-in-out;
             transition: all .3s ease-in-out;
             height: 20vw;
-            -o-object-fit: cover;
-            object-fit: cover;
             border-radius: 7px; }
             #work .work-inner .projects-item .projects-img__inside img:hover {
               -webkit-animation: fadeInUp 1s linear infinite;
